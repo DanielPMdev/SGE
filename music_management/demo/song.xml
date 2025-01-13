@@ -1,0 +1,262 @@
+<odoo>
+    <data>
+        <record id="cancion_0" model="music_management.song">
+            <field name="name">Once</field>
+            <field name="album_id">8</field>
+            <field name="duracion">231</field>
+        </record>
+        <record id="cancion_1" model="music_management.genre">
+            <field name="name">Even Flow</field>
+            <field name="album_id">8</field>
+            <field name="duracion">292</field>
+        </record>
+        <record id="cancion_2" model="music_management.genre">
+            <field name="name">Alive</field>
+            <field name="album_id">8</field>
+            <field name="duracion">340</field>
+        </record>
+        <record id="cancion_3" model="music_management.genre">
+            <field name="name">Why Go</field>
+            <field name="album_id">8</field>
+            <field name="duracion">230</field>
+        </record>
+        <record id="cancion_4" model="music_management.genre">
+            <field name="name">Black</field>
+            <field name="album_id">8</field>
+            <field name="duracion">342</field>
+        </record>
+        <record id="cancion_5" model="music_management.genre">
+            <field name="name">Jeremy</field>
+            <field name="album_id">8</field>
+            <field name="duracion">318</field>
+        </record>
+        <record id="cancion_6" model="music_management.genre">
+            <field name="name">Oceans</field>
+            <field name="album_id">8</field>
+            <field name="duracion">161</field>
+        </record>
+        <record id="cancion_7" model="music_management.genre">
+            <field name="name">Porch</field>
+            <field name="album_id">8</field>
+            <field name="duracion">210</field>
+        </record>
+        <record id="cancion_8" model="music_management.genre">
+            <field name="name">Garden</field>
+            <field name="album_id">8</field>
+            <field name="duracion">298</field>
+        </record>
+        <record id="cancion_9" model="music_management.genre">
+            <field name="name">Deep</field>
+            <field name="album_id">8</field>
+            <field name="duracion">258</field>
+        </record>
+        <record id="cancion_10" model="music_management.genre">
+            <field name="name">Release</field>
+            <field name="album_id">8</field>
+            <field name="duracion">546</field>
+        </record>
+        <record id="cancion_11" model="music_management.genre">
+            <field name="name">Go</field>
+            <field name="album_id">9</field>
+            <field name="duracion">193</field>
+        </record>
+        <record id="cancion_12" model="music_management.genre">
+            <field name="name">Animal</field>
+            <field name="album_id">9</field>
+            <field name="duracion">169</field>
+        </record>
+        <record id="cancion_13" model="music_management.genre">
+            <field name="name">Daughter</field>
+            <field name="album_id">9</field>
+            <field name="duracion">235</field>
+        </record>
+        <record id="cancion_14" model="music_management.genre">
+            <field name="name">Glorified G</field>
+            <field name="album_id">9</field>
+            <field name="duracion">207</field>
+        </record>
+        <record id="cancion_15" model="music_management.genre">
+            <field name="name">Dissident</field>
+            <field name="album_id">9</field>
+            <field name="duracion">215</field>
+        </record>
+        <record id="cancion_16" model="music_management.genre">
+            <field name="name">W.M.A.</field>
+            <field name="album_id">9</field>
+            <field name="duracion">359</field>
+        </record>
+        <record id="cancion_17" model="music_management.genre">
+            <field name="name">Blood</field>
+            <field name="album_id">9</field>
+            <field name="duracion">171</field>
+        </record>
+        <record id="cancion_18" model="music_management.genre">
+            <field name="name">Rearviewmirror</field>
+            <field name="album_id">9</field>
+            <field name="duracion">284</field>
+        </record>
+        <record id="cancion_19" model="music_management.genre">
+            <field name="name">Rats</field>
+            <field name="album_id">9</field>
+            <field name="duracion">255</field>
+        </record>
+        <record id="cancion_20" model="music_management.genre">
+            <field name="name">Elderly Woman Behind the Counter in a Small Town</field>
+            <field name="album_id">9</field>
+            <field name="duracion">196</field>
+        </record>
+        <record id="cancion_21" model="music_management.genre">
+            <field name="name">Leash</field>
+            <field name="album_id">9</field>
+            <field name="duracion">189</field>
+        </record>
+        <record id="cancion_22" model="music_management.genre">
+            <field name="name">Indifference</field>
+            <field name="album_id">9</field>
+            <field name="duracion">302</field>
+        </record>
+        <record id="cancion_23" model="music_management.genre">
+            <field name="name">Go</field>
+            <field name="album_id">9</field>
+            <field name="duracion">193</field>
+        </record>
+        <!-- Canciones del álbum "Rotten Apples: Greatest Hits" -->
+        <record id="cancion_31" model="music_management.genre">
+            <field name="name">Siva</field>
+            <field name="album_id">15</field>
+            <field name="duracion">245</field>
+        </record>
+        <record id="cancion_32" model="music_management.genre">
+            <field name="name">Rhinoceros</field>
+            <field name="album_id">15</field>
+            <field name="duracion">351</field>
+        </record>
+        <record id="cancion_33" model="music_management.genre">
+            <field name="name">Drown</field>
+            <field name="album_id">15</field>
+            <field name="duracion">269</field>
+        </record>
+        <record id="cancion_34" model="music_management.genre">
+            <field name="name">Cherub Rock</field>
+            <field name="album_id">15</field>
+            <field name="duracion">299</field>
+        </record>
+        <record id="cancion_35" model="music_management.genre">
+            <field name="name">Today</field>
+            <field name="album_id">15</field>
+            <field name="duracion">219</field>
+        </record>
+        <record id="cancion_36" model="music_management.genre">
+            <field name="name">Disarm</field>
+            <field name="album_id">15</field>
+            <field name="duracion">194</field>
+        </record>
+        <record id="cancion_315" model="music_management.genre">
+            <field name="name">Bullet with Butterfly Wings</field>
+            <field name="album_id">15</field>
+            <field name="duracion">258</field>
+        </record>
+        <record id="cancion_38" model="music_management.genre">
+            <field name="name">1979</field>
+            <field name="album_id">15</field>
+            <field name="duracion">247</field>
+        </record>
+        <record id="cancion_39" model="music_management.genre">
+            <field name="name">Tonight, Tonight</field>
+            <field name="album_id">15</field>
+            <field name="duracion">273</field>
+        </record>
+        <record id="cancion_40" model="music_management.genre">
+            <field name="name">Ava Adore</field>
+            <field name="album_id">15</field>
+            <field name="duracion">278</field>
+        </record>
+        <record id="cancion_41" model="music_management.genre">
+            <field name="name">Perfect</field>
+            <field name="album_id">15</field>
+            <field name="duracion">233</field>
+        </record>
+
+        <!-- Canciones del álbum "Judas Ø: B-Sides and Rarities" -->
+        <record id="cancion_51" model="music_management.genre">
+            <field name="name">Lucky 13</field>
+            <field name="album_id">14</field>
+            <field name="duracion">189</field> <!-- 3:09 -->
+        </record>
+        <record id="cancion_52" model="music_management.genre">
+            <field name="name">Aeroplane Flies High</field>
+            <field name="album_id">14</field>
+            <field name="duracion">473</field> <!-- 7:53 -->
+        </record>
+        <record id="cancion_53" model="music_management.genre">
+            <field name="name">Because You Are</field>
+            <field name="album_id">14</field>
+            <field name="duracion">226</field> <!-- 3:46 -->
+        </record>
+        <record id="cancion_54" model="music_management.genre">
+            <field name="name">Slow Dawn</field>
+            <field name="album_id">14</field>
+            <field name="duracion">192</field> <!-- 3:12 -->
+        </record>
+        <record id="cancion_55" model="music_management.genre">
+            <field name="name">Believe</field>
+            <field name="album_id">14</field>
+            <field name="duracion">192</field> <!-- 3:12 -->
+        </record>
+        <record id="cancion_56" model="music_management.genre">
+            <field name="name">My Mistake</field>
+            <field name="album_id">14</field>
+            <field name="duracion">240</field> <!-- 4:00 -->
+        </record>
+        <record id="cancion_57" model="music_management.genre">
+            <field name="name">Marquis in Spades</field>
+            <field name="album_id">14</field>
+            <field name="duracion">192</field> <!-- 3:12 -->
+        </record>
+        <record id="cancion_58" model="music_management.genre">
+            <field name="name">Here's to the Atom Bomb</field>
+            <field name="album_id">14</field>
+            <field name="duracion">266</field> <!-- 4:26 -->
+        </record>
+        <record id="cancion_59" model="music_management.genre">
+            <field name="name">Sparrow</field>
+            <field name="album_id">14</field>
+            <field name="duracion">176</field> <!-- 2:56 -->
+        </record>
+        <record id="cancion_60" model="music_management.genre">
+            <field name="name">Waiting</field>
+            <field name="album_id">14</field>
+            <field name="duracion">228</field> <!-- 3:48 -->
+        </record>
+        <record id="cancion_61" model="music_management.genre">
+            <field name="name">Saturnine</field>
+            <field name="album_id">14</field>
+            <field name="duracion">229</field> <!-- 3:49 -->
+        </record>
+        <record id="cancion_62" model="music_management.genre">
+            <field name="name">Rock On</field>
+            <field name="album_id">14</field>
+            <field name="duracion">366</field> <!-- 6:06 -->
+        </record>
+        <record id="cancion_63" model="music_management.genre">
+            <field name="name">Set the Ray to Jerry</field>
+            <field name="album_id">14</field>
+            <field name="duracion">249</field> <!-- 4:09 -->
+        </record>
+        <record id="cancion_64" model="music_management.genre">
+            <field name="name">Winterlong</field>
+            <field name="album_id">14</field>
+            <field name="duracion">299</field> <!-- 4:59 -->
+        </record>
+        <record id="cancion_65" model="music_management.genre">
+            <field name="name">Soot and Stars</field>
+            <field name="album_id">14</field>
+            <field name="duracion">399</field> <!-- 6:39 -->
+        </record>
+        <record id="cancion_66" model="music_management.genre">
+            <field name="name">Blissed and Gone</field>
+            <field name="album_id">14</field>
+            <field name="duracion">286</field> <!-- 4:46 -->
+        </record>
+    </data>
+</odoo>
