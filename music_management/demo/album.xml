@@ -1,68 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <data>
-        <record id="album_0" model="music_managemet.album">
-            <field name="name">For Those About To Rock We Salute You</field>
-            <field name="banda_id">1</field>
-        </record>
-        <record id="album_1" model="music_managemet.album">
-            <field name="name">Let There Be Rock</field>
-            <field name="banda_id">1</field>
-        </record>
-        <record id="album_2" model="music_managemet.album">
-            <field name="name">My Way: The Best Of Frank Sinatra</field>
-            <field name="banda_id">7</field>
-        </record>
-        <record id="album_3" model="music_managemet.album">
-            <field name="name">Are You Experienced?</field>
-            <field name="banda_id">9</field>
-        </record>
-        <record id="album_4" model="music_managemet.album">
-            <field name="name">Live On Two Legs [Live]</field>
-            <field name="banda_id">10</field>
-        </record>
-        <record id="album_5" model="music_managemet.album">
-            <field name="name">Pearl Jam</field>
-            <field name="banda_id">10</field>
-        </record>
-        <record id="album_6" model="music_managemet.album">
-            <field name="name">Riot Act</field>
-            <field name="banda_id">10</field>
-        </record>
-        <record id="album_7" model="music_managemet.album">
-            <field name="name">Ten</field>
-            <field name="banda_id">10</field>
-        </record>
-        <record id="album_8" model="music_managemet.album">
-            <field name="name">Vs.</field>
-            <field name="banda_id">10</field>
-        </record>
-        <record id="album_9" model="music_managemet.album">
-            <field name="name">Dark Side Of The Moon</field>
-            <field name="banda_id">11</field>
-        </record>
-        <record id="album_10" model="music_managemet.album">
-            <field name="name">Blood Sugar Sex Magik </field>
-            <field name="banda_id">12</field>
-        </record>
-        <record id="album_11" model="music_managemet.album">
-            <field name="name">By The Way</field>
-            <field name="banda_id">12</field>
-        </record>
-        <record id="album_12" model="music_managemet.album">
-            <field name="name">Californication</field>
-            <field name="banda_id">12</field>
-        </record>
-        <record id="album_13" model="music_managemet.album">
-            <field name="name">Judas 0: B-Sides and Rarities</field>
-            <field name="banda_id">13</field>
-        </record>
-        <record id="album_14" model="music_managemet.album">
-            <field name="name">Rotten Apples: Greatest Hits</field>
-            <field name="banda_id">13</field>
-        </record>
-         <record id="album_15" model="music_managemet.album">
-            <field name="name">The Police Greatest Hits</field>
-            <field name="banda_id">14</field>
+    <data noupdate="1">
+        <record id="album_1" model="music_management.album">
+            <field name="name">Primera Musa</field>
+            <field name="releaseYear">2024-01-01</field>
+            <field name="band_id" ref="band_1"/>  </record>
+        <record id="album_2" model="music_management.album">
+            <field name="name">Kyoto</field>
+            <field name="releaseYear">2023-01-01</field>
+            <field name="band_id" ref="band_1"/>  </record>
+        <record id="album_3" model="music_management.album">
+            <field name="name">Yipiyou</field>
+            <field name="releaseYear">2018-01-01</field>
+            <field name="band_id" ref="band_2"/>  </record>
+        <record id="album_4" model="music_management.album">
+            <field name="name">Easy Money Baby</field>
+            <field name="releaseYear">2020-01-01</field>
+            <field name="band_id" ref="band_3"/>
         </record>
     </data>
 </odoo>

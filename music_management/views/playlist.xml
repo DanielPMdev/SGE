@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- View music_management.playlist View List -->
+    <record id="view_music_management_playlist_list" model="ir.ui.view">
+        <field name="name">Vista de Playlist</field>
+        <field name="model">music_management.playlist</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="playlistCover" widget="image" />
+                <field name="name"/>
+                <field name="playlistDurationFormatted"/>
+                <field name="songCount" width="150px"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- View music_management.playlist form -->
+    <record id="view_music_management_playlist_form" model="ir.ui.view">
+        <field name="name">Formulario de Playlsit</field>
+        <field name="model">music_management.playlist</field>
+        <field name="arch" type="xml">
+            <form string="Music_management Playlist">
+                <sheet>                    
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1>
+                            <field name="name" placeholder="Name..."/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="playlistCover" widget="image" options="{'size': [232, 232]}"/>
+                        </group>
+                        <group>
+                            <field name="description" string="Descripción de la Playlist"/>                    
+                            <field name="playlistDuration" string="Duración Total de la Playlist (segundos)" readonly="1"/>
+                            <field name="playlistDurationFormatted" string="Duración Total Formateada de la Playlist" readonly="1"/>
+                            <field name="songCount" string="Cantidad de Canciones" readonly="1"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Canciones asociadas a la Playlist">
+                            <field name="song_ids" widget="many2many"/>
+                        </page>                    
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- View music_management.playlist search -->
+    <record id="view_music_management_playlist_search" model="ir.ui.view">
+        <field name="name">view.music_management.playlist.search</field>
+        <field name="model">music_management.playlist</field>
+        <field name="arch" type="xml">
+            <search>
+                <group expand="1" string="Group By">
+                    <filter string="Name" name="name" domain="[]" context="{'group_by':'name'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action music_management.playlist -->
+    <record id="action_music_management_playlist" model="ir.actions.act_window">
+        <field name="name">Listado de Playlist</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">music_management.playlist</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                There is no examples click here to add new Music_management Playlist.
+            </p>
+        </field>
+    </record>
+
+</odoo>

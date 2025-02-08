@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+
 from odoo import models, fields, api
 
 
@@ -10,21 +11,17 @@ class Band(models.Model):
     #Atributos
     name = fields.Char()
     
-    #FALTA EL GENERO DE LA BANDA
-    
-    
-    #value = fields.Integer()
-    #value2 = fields.Float(compute="_value_pc", store=True)
-    #description = fields.Text()
-
-    
     #Relaciones 
     #Una banda tiene muchos albums y un album pertenece a una sola banda
     album_ids = fields.One2many('music_management.album', 'band_id', string='Libros')
     
+    #Una banda tiene un genero y un genero pertenece a muchas bandas
+    genre_id = fields.Many2one('music_management.genre', string='Genero')
     
+    #Una banda tiene un país y un pais tiene muchas bandas
+    country_id = fields.Many2one('res.country', string="País de Origen")
+
     #Campo Calculado
-    
     albumCount = fields.Integer(string="Número de Albums", compute="_compute_album_count",
                                store=False)
     
@@ -32,10 +29,3 @@ class Band(models.Model):
     def _compute_album_count(self):
         for band in self:
             band.albumCount = len(band.album_ids)
-    
-    
-#
-#     @api.depends('value')
-#     def _value_pc(self):
-#         for record in self:
-#             record.value2 = float(record.value) / 100

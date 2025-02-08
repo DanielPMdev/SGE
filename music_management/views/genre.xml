@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- View music_management.genre View List -->
+    <record id="view_music_management_genre_list" model="ir.ui.view">
+        <field name="name">Listado de Generos</field>
+        <field name="model">music_management.genre</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="danceRating"/>
+                <field name="bandCount" width="172px"/>                
+            </list>
+        </field>
+    </record>
+
+    <!-- View music_management.genre form -->
+    <record id="view_music_management_genre_form" model="ir.ui.view">
+        <field name="name">Formulario de Generos</field>
+        <field name="model">music_management.genre</field>
+        <field name="arch" type="xml">
+            <form string="Music_management Genre">
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name" string="Genero"/>
+                        <h1>
+                            <field name="name" placeholder="Name..."/>
+                        </h1>                        
+                    </div>
+                    <group>
+                        <group>
+                            <field name="danceRating"/>
+                            <field name="bandCount" string="Cantidad de Canciones" readonly="1"/>  
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Bandas asociadas al Genero">
+                            <field name="band_ids" widget="one2many" string="Generos"/>                        
+                        </page>                    
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- View music_management.genre search -->
+    <record id="view_music_management_genre_search" model="ir.ui.view">
+        <field name="name">view.music_management.genre.search</field>
+        <field name="model">music_management.genre</field>
+        <field name="arch" type="xml">
+            <search>
+                <group expand="1" string="Group By">
+                    <filter string="Name" name="name" domain="[]" context="{'group_by':'name'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action music_management.genre -->
+    <record id="action_music_management_genre" model="ir.actions.act_window">
+        <field name="name">Listado de Generos</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">music_management.genre</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                There is no examples click here to add new Music_management Genre.
+            </p>
+        </field>
+    </record>
+
+</odoo>

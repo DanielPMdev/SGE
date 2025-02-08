@@ -1,99 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <data>
-        <record id="banda_0" model="music_management.band">
-            <field name="name">AC/DC</field>
-            <field name="genero_id">16</field>
+    <data noupdate="1">
+        <record id="band_1" model="music_management.band">
+            <field name="name">Omar Curtz</field>
+            <field name="genre_id" ref="genre_1"/>
+            <field name="country_id" ref="country_181"/>
         </record>
-        <record id="banda_1" model="music_management.band">
-            <field name="name">Aerosmith</field>
-            <field name="genero_id">16</field>
+        <record id="band_2" model="music_management.band">
+            <field name="name">Fernando Costa</field>
+            <field name="genre_id" ref="genre_2"/>
+            <field name="country_id" ref="country_68"/>
         </record>
-        <record id="banda_2" model="music_management.band">
-            <field name="name">Alice In Chains</field>
-            <field name="genero_id">16</field>
+        <record id="band_3" model="music_management.band">
+            <field name="name">Myke Towers</field>
+            <field name="genre_id" ref="genre_1"/>
+            <field name="country_id" ref="country_181"/>
         </record>
-        <record id="banda_3" model="music_management.band">
-            <field name="name">Metallica</field>
-            <field name="genero_id">16</field>
+        <record id="band_4" model="music_management.band">
+            <field name="name">Bad Bunny</field>
+            <field name="genre_id" ref="genre_1"/>
+            <field name="country_id" ref="country_181"/>
         </record>
-        <record id="banda_4" model="music_management.band">
-            <field name="name">Queen</field>
-            <field name="genero_id">16</field>
+        <record id="band_5" model="music_management.band">
+            <field name="name">Dei V</field>
+            <field name="genre_id" ref="genre_1"/>
+            <field name="country_id" ref="country_181"/>
         </record>
-        <record id="banda_5" model="music_management.band">
-            <field name="name">Deep Purple</field>
-            <field name="genero_id">16</field>
+        <record id="band_6" model="music_management.band">
+            <field name="name">Mora</field>
+            <field name="genre_id" ref="genre_1"/>
+            <field name="country_id" ref="country_181"/>
         </record>
-        <record id="banda_6" model="music_management.band">
-            <field name="name">Frank Sinatra</field>
-            <field name="genero_id">16</field>
+        <record id="band_7" model="music_management.band">
+            <field name="name">Anuel AA</field>
+            <field name="genre_id" ref="genre_1"/>
+            <field name="country_id" ref="country_181"/>
         </record>
-        <record id="banda_7" model="music_management.band">
-            <field name="name">Guns N' Roses</field>
-            <field name="genero_id">16</field>
+        <record id="band_8" model="music_management.band">
+            <field name="name">Delaossa</field>
+            <field name="genre_id" ref="genre_2"/>
+            <field name="country_id" ref="country_68"/>
         </record>
-        <record id="banda_8" model="music_management.band">
-            <field name="name">Jimi Hendrix</field>
-            <field name="genero_id">16</field>
+        <record id="band_9" model="music_management.band">
+            <field name="name">Reality</field>
+            <field name="genre_id" ref="genre_2"/>
+            <field name="country_id" ref="country_68"/>
         </record>
-        <record id="banda_9" model="music_management.band">
-            <field name="name">Pearl Jam </field>
-            <field name="genero_id">16</field>
-        </record>
-        <record id="banda_10" model="music_management.band">
-            <field name="name">Pink Floyd </field>
-            <field name="genero_id">16</field>
-        </record>
-        <record id="banda_11" model="music_management.band">
-            <field name="name">Red Hot Chili Peppers </field>
-            <field name="genero_id">16</field>
-        </record>
-        <record id="banda_16" model="music_management.band">
-            <field name="name">Smashing Pumpkins </field>
-            <field name="genero_id">16</field>
-        </record>
-        <record id="banda_13" model="music_management.band">
-            <field name="name">The Police</field>
-            <field name="genero_id">16</field>
-        </record>
-        <record id="banda_14" model="music_management.band">
-            <field name="name">The Doors</field>
-            <field name="genero_id">16</field>
-        </record>
-
-    
-    
-    
-   
-    
-    
-    
-
-<!--
-          <record id="banda_0" model="gestion_listas_musicales.gestion_listas_musicales">
-            <field name="name">banda_ 0</field>
-            <field name="value">0</field>
-          </record>
-
-          <record id="banda_1" model="gestion_listas_musicales.gestion_listas_musicales">
-            <field name="name">banda_ 1</field>
-            <field name="value">10</field>
-          </record>
-
-          <record id="banda_2" model="gestion_listas_musicales.gestion_listas_musicales">
-            <field name="name">banda_ 2</field>
-            <field name="value">20</field>
-          </record>
-
-          <record id="banda_3" model="gestion_listas_musicales.gestion_listas_musicales">
-            <field name="name">banda_ 3</field>
-            <field name="value">30</field>
-          </record>
-
-          <record id="banda_4" model="gestion_listas_musicales.gestion_listas_musicales">
-            <field name="name">banda_ 4</field>
-            <field name="value">40</field>
-          </record>
--->
     </data>
 </odoo>

@@ -1,0 +1,23 @@
+<odoo>
+  <data>
+
+    <!-- Top menu item -->
+    <menuitem name="Music Management" id="music_management.menu_root"/>
+
+    <!-- menu categories -->
+    <menuitem name="Music" id="music_management.menu_1" parent="music_management.menu_root"/>
+
+    <!-- actions -->
+    <menuitem name="Album" id="music_management.menu_1_list" parent="music_management.menu_1"
+              action="action_music_management_album"/>
+    <menuitem name="Band" id="music_management.menu_2_list" parent="music_management.menu_1"
+               action="action_music_management_band"/>
+    <menuitem name="Genre" id="music_management.menu_3_list" parent="music_management.menu_1"
+               action="action_music_management_genre"/>
+    <menuitem name="Playlist" id="music_management.menu_4_list" parent="music_management.menu_1"
+               action="action_music_management_playlist"/>
+    <menuitem name="Song" id="music_management.menu_5_list" parent="music_management.menu_1"
+               action="action_music_management_song"/>          
+
+  </data>
+</odoo>

@@ -22,17 +22,31 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base', 'web'],
 
     # always loaded
-    'data': [
-        'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
+    "data": [
+        "security/ir.model.access.csv",
+        "views/genre.xml",
+        "views/band.xml",
+        "views/album.xml",
+        "views/song.xml",
+        "views/playlist.xml",
+        "views/templates.xml",
+        "views/menus.xml"
     ],
     # only loaded in demonstration mode
     'demo': [
-        'demo/demo.xml',
+        'demo/genre.xml',
+        'demo/band.xml',
+        'demo/album.xml',    
+        'demo/song.xml',
+        #'demo/playlist.xml'
     ],
+    #'assets': {
+        #'web.assets_backend': [
+            #'music_management/static/src/js/year_widget.js',
+        #],
+    #},
 }
 

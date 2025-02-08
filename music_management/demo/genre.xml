@@ -1,52 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <data>
-        <record id="genero_0" model="music_management.genre">
-            <field name="name">Hip Hop/Rap</field>
+    <data noupdate="1">
+        <record id="genre_1" model="music_management.genre">
+            <field name="name">Reguetón</field>
+            <field name="danceRating">4</field>
         </record>
-        <record id="genero_1" model="music_management.genre">
-            <field name="name">Electronica/Dance</field>
-        </record>
-        <record id="genero_2" model="music_management.genre">
-            <field name="name">Heavy Metal</field>
-        </record>
-        <record id="genero_3" model="music_management.genre">
-            <field name="name">Soundtrack</field>
-        </record>
-        <record id="genero_4" model="music_management.genre">
-            <field name="name">Pop</field>
-        </record>
-        <record id="genero_5" model="music_management.genre">
-            <field name="name">Reggae</field>
-        </record>
-        <record id="genero_6" model="music_management.genre">
-            <field name="name">Alternative</field>
-        </record>
-        <record id="genero_7" model="music_management.genre">
-            <field name="name">Classical</field>
-        </record>
-        <record id="genero_8" model="music_management.genre">
-            <field name="name">Opera</field>
-        </record>
-        <record id="genero_9" model="music_management.genre">
-            <field name="name">Latin</field>
-        </record>
-        <record id="genero_10" model="music_management.genre">
-            <field name="name">Blues</field>
-        </record>
-        <record id="genero_11" model="music_management.genre">
-            <field name="name">Rock And Roll</field>
-        </record>
-        <record id="genero_12" model="music_management.genre">
-            <field name="name">Alternative &amp; Punk</field>
-        </record>
-        <record id="genero_13" model="music_management.genre">
-            <field name="name">Metal</field>
-        </record>
-        <record id="genero_14" model="music_management.genre">
-            <field name="name">Jazz</field>
-        </record>
-         <record id="genero_15" model="music_management.genre">
-            <field name="name">Rock</field>
+        <record id="genre_2" model="music_management.genre">
+            <field name="name">Rap</field>
+            <field name="danceRating">2</field>
         </record>
     </data>
 </odoo>

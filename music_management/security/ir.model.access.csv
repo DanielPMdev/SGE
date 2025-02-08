@@ -1,3 +1,6 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_music_management_genre,music_management.genre,model_music_management_genre,base.group_user,1,1,1,1
 access_music_management_band,music_management.band,model_music_management_band,base.group_user,1,1,1,1
 access_music_management_album,music_management.album,model_music_management_album,base.group_user,1,1,1,1
+access_music_management_song,music_management.song,model_music_management_song,base.group_user,1,1,1,1
+access_music_management_playlist,music_management.playlist,model_music_management_playlist,base.group_user,1,1,1,1

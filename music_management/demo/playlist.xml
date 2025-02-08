@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="playlist_1" model="music_management.playlist">
+            <field name="name">Regueton by Daniel</field>
+            <field name="description">La playlist que te hará bailar sin parar. Reguetón puro para todas las ocasiones.</field>
+            </record>
+    </data>
+</odoo>

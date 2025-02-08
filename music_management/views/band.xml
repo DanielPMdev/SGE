@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- View music_management.band View List -->
+    <record id="view_music_management_band_list" model="ir.ui.view">
+        <field name="name">Lista de Bandas</field>
+        <field name="model">music_management.band</field>
+        <field name="arch" type="xml">
+            <list string="Lista de Bandas">
+                <field name="name" string="Nombre de la Banda"/>
+                <field name="genre_id" string="Genero" />  
+                <field name="country_id"/>                      
+                <field name="albumCount" string="Cantidad de Álbumes" readonly="1" width="172px"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- View music_management.band form -->
+    <record id="view_music_management_band_form" model="ir.ui.view">
+        <field name="name">Formulario de Banda</field>
+        <field name="model">music_management.band</field>
+        <field name="arch" type="xml">
+            <form string="Gestión de Bandas">
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1>
+                            <field name="name" placeholder="Nombre de la Banda..."/>
+                        </h1>
+                    </div>
+                    <notebook>
+                        <page string="Álbumes de la Banda">
+                            <field name="album_ids" widget="one2many" string="Álbumes"/>
+                        </page>
+                        <page string="Género de la Banda">
+                            <field name="genre_id" widget="many2one" string="Género"/>
+                        </page>
+                        <page string="País de Origen de la Banda">
+                            <field name="country_id" widget="many2one"/>                    
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- View music_management.band search -->
+    <record id="view_music_management_band_search" model="ir.ui.view">
+        <field name="name">view.music_management.band.search</field>
+        <field name="model">music_management.band</field>
+        <field name="arch" type="xml">
+            <search>
+                <group expand="1" string="Group By">
+                    <filter string="Name" name="name" domain="[]" context="{'group_by':'name'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action music_management.band -->
+    <record id="action_music_management_band" model="ir.actions.act_window">
+        <field name="name">Listado de Bandas</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">music_management.band</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                There is no examples click here to add new Music_management Band.
+            </p>
+        </field>
+    </record>
+
+</odoo>
